@@ -8,6 +8,54 @@ function Course() {
   };
 
   const coursesData = [
+
+    {
+      name: "Software  Programming",
+      duration: "2 Years",
+      objective:
+        "Learn some programming language, library and Backend with comminucation, leadership and others skills",
+      content: [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "React",
+        "MySQL / NOSQL",
+      ],
+      tools: ["Computer/Laptop", "Keyboard"],
+      careerOpportunities:
+        "Web devloper, Full stack devloper",
+      targetGroup: "Youth and office job seekers",
+      image:
+        "https://www.michaelpage.co.in/sites/michaelpage.co.in/files/2022-05/Software%20Developer.jpg",
+      trainer: {
+        name: "Rishav Tiwari, Filmeena, Sakuntala",
+        experience: "3 years in Software Programming",
+      },
+    },
+
+
+    {
+      name: "Business",
+      duration: "2 Years",
+      objective:
+        "Learn google sheet, CRM, Digital market",
+      content: [
+        "Google sheet",
+        "CRM",
+        "Digital Market"
+      ],
+      tools: ["Computer/Laptop", "Keyboard"],
+      careerOpportunities:
+        "Web devloper, Full stack devloper",
+      targetGroup: "Youth and office job seekers",
+      image:
+        "https://www.thestatesman.com/wp-content/uploads/2019/04/Physics-and-business.jpg",
+      trainer: {
+        name: "Roshni, Bhumika",
+        experience: "1 years in business",
+      },
+    },
+
     {
       name: "Stitching & Tailoring (Silai)",
       duration: "3 months",
@@ -24,7 +72,7 @@ function Course() {
         "Boutiques, garment factories, or start own tailoring business",
       targetGroup: "Women and youth",
       image:
-        "https://www.ushafoundation.in/images/FashionInstitute/whytailoring/tailoringclasses.webp",
+        "https://im.rediff.com/getahead/2018/feb/21ushasilai12.jpg?w=450&h=450",
       trainer: {
         name: "Ms. Priya Sharma",
         experience: "5 years in fashion & tailoring",

@@ -20,7 +20,7 @@ function AboutUs() {
             </h1>
 
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8" >
+            <div className="flex flex-wrap justify-center gap-4 mb-8 sticky top-20 bg-gray-50 z-50 py-4">
                 <button
                     onClick={() => scrollTo(overviewRef)}
                     className="bg-blue-900 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-800 transition duration-300"

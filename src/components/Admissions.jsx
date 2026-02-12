@@ -12,6 +12,19 @@ const steps = [
 function Addmission() {
   const [currentStep, setCurrentStep] = useState(0);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    dateOfbirth: "",
+    gender: "",
+    fathersName: "",
+    mothersName: "",
+    parentContact: "",
+    parentEmail: "",
+    email: "",
+    phone: "",
+    address: ""
+  });
+  
   const nextStep = () => {
     if (currentStep < steps.length - 1) {
       setCurrentStep(currentStep + 1);
@@ -258,51 +271,16 @@ function Addmission() {
         </div>
       );
     }
-
-
-    // if (currentStep === 5) {
-    //   return (
-    //     <div className="space-y-6">
-    //       <div className="p-4 bg-green-50 border border-green-200 rounded-xl">
-    //         <p className="text-sm text-green-800 font-medium">
-    //           By proceeding, you declare that all information submitted is true and accurate.
-    //         </p>
-    //       </div>
-    //       <div>
-    //         <label className="block font-semibold mb-1">
-    //           Student Signature
-    //         </label>
-    //         <input
-    //           type="file"
-    //           accept="image/*"
-    //           className="w-full border border-gray-300 rounded-lg p-3 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition duration-150 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    //         />
-    //       </div>
-
-    //       <div>
-    //         <label className="block font-semibold mb-1">
-    //           Parent Signature
-    //         </label>
-    //         <input
-    //           type="file"
-    //           accept="image/*"
-    //           className="w-full border border-gray-300 rounded-lg p-3 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition duration-150 focus:outline-none focus:ring-2 focus:ring-blue-400"
-    //         />
-    //       </div>
-
-    //       <div className="flex items-center space-x-3 mt-6">
-    //         <input
-    //           id="declaration-checkbox"
-    //           type="checkbox"
-    //           className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-2 focus:ring-blue-400 accent-blue-600"
-    //         />
-    //         <label htmlFor="declaration-checkbox" className="text-gray-700 font-medium cursor-pointer">
-    //           I agree to the declaration that all information is correct.
-    //         </label>
-    //       </div>
-    //     </div>
-    //   );
-    // }
+    <div className="flex items-center space-x-3 mt-6">
+      <input
+        id="declaration-checkbox"
+        type="checkbox"
+        className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-2 focus:ring-blue-400 accent-blue-600"
+      />
+      <label htmlFor="declaration-checkbox" className="text-gray-700 font-medium cursor-pointer">
+        I agree to the declaration that all information is correct.
+      </label>
+    </div>
 
     return (
       <div className="text-center p-10 bg-green-100 rounded-xl shadow-inner">
